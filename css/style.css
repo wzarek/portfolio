@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+
+
+.d-none {
+    display: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+
+}
+
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    background-color: #333;
+    color: #fff;
+}
+
+header h2 {
+    font-family: 'Lexend Peta', sans-serif;
+    position: absolute;
+}
+
+header .slider {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    overflow-x: hidden;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.slider img {
+    width: 30em;
+    float: right;
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+}
+
+.slider h2 {
+    right: 33rem;
+    top: 22rem;
+    background-color: transparent;
+    font-size: 5em;
+    z-index: 0;
+}
+
+.slider h2:last-of-type {
+    top: 33rem;
+    z-index: 0;
+}
+
+.slider p {
+    position: absolute;
+    bottom: 2em;
+}
+
+.slider .text-stroke h2 {
+    z-index: 2;
+    color: transparent;
+}
+
+nav {
+    position: absolute;
+    right: 5em;
+    top: 10em;
+}
+
+.nav-hamburger {
+    position: fixed;
+    right: -10em;
+    transition-duration: 0.5s;
+    z-index: 111;
+}
+
+header h4 {
+    position: fixed;
+    right: 5em;
+    top: 5em;
+    transition-duration: 0.5s;
+}
+
+header h4:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 3em 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.menu-clicked {
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    font-weight: 500;
+}
+
+.blink {
+    position: absolute;
+    top: 10em;
+    left: 5em;
+}
+
+.text {
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.text-1,
+.text-3,
+.text-4,
+.text-8,
+.text-9,
+.text-11 {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0%;
+    }
+
+    1% {
+        opacity: 100%;
+    }
+
+    99% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink2 {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.text-1 {
+    animation: blink 0.8s linear 0.9s, blink 0.8s linear 2s;
+    opacity: 0;
+}
+
+.text-2 {
+    animation: blink 0.8s linear 0.8s, blink 0.8s linear 2.1s;
+    opacity: 0;
+}
+
+.text-3 {
+    animation: blink 0.8s linear 0.7s, blink 0.8s linear 2.2s;
+    opacity: 0;
+}
+
+.text-4 {
+    animation: blink 0.8s linear 0.6s, blink 0.8s linear 2.3s;
+    opacity: 0;
+}
+
+.text-5 {
+    animation: blink 0.8s linear 0.5s, blink 0.8s linear 2.4s;
+    opacity: 0;
+}
+
+.text-6 {
+    animation: blink 0.8s linear 0.4s, blink 0.8s linear 2.5s;
+    opacity: 0;
+}
+
+.text-7 {
+    animation: blink 0.8s linear 0.5s, blink 0.8s linear 2.4s;
+    opacity: 0;
+}
+
+.text-8 {
+    animation: blink 0.8s linear 0.6s, blink 0.8s linear 2.3s;
+    opacity: 0;
+}
+
+.text-9 {
+    animation: blink 0.8s linear 0.7s, blink 0.8s linear 2.2s;
+    opacity: 0;
+}
+
+.text-10 {
+    animation: blink 0.8s linear 0.8s, blink 0.8s linear 2.1s;
+    opacity: 0;
+}
+
+.text-11 {
+    animation: blink 0.8s linear 0.9s, blink 0.8s linear 2s;
+    opacity: 0;
+}
+
+main {
+    transition-duration: .5s;
+}
+
+main>section {
+    width: 70%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+main>section h2 {
+    font-weight: 500;
+    font-size: 2em;
+    padding: 2rem 0;
+}
+
+
+.about-me p {
+    padding: 1rem 0;
+}
+
+.my-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "h2 h2 h2"
+        "sec sec sec"
+        "zdj1 zdj2 zdj3";
+}
+
+
+.my-work h2 {
+    grid-area: h2;
+}
+
+.my-work section {
+    grid-area: sec;
+    padding-bottom: 2rem;
+    margin: auto;
+}
+
+.my-work section span {
+    margin: 0 2em;
+}
+
+.my-work figure {
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 4rem;
+    transition-duration: 0.5s;
+}
+
+.my-work figure img {
+    width: 100%;
+}
+
+.my-work figure:hover {
+    transform: scale(1.1);
+}
+
+.contact form * {
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 2em;
+    height: 3em;
+    border: none;
+    outline: 1px solid #000;
+    padding: 1em;
+}
+
+::placeholder {
+    color: #ddd;
+}
+
+.contact form textarea {
+    resize: none;
+    height: 10em;
+}
+
+.contact form button {
+    color: #000;
+    font-weight: 500;
+    background-color: #ddd;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.contact form button:hover {
+    transform: scaleX(1.05);
+}
+
+.posts-insta {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 1rem;
+}
+
+.post {
+    position: relative;
+}
+
+.posts-insta figure {
+    width: 100%;
+    height: 20em;
+    overflow: hidden;
+    margin: 0;
+}
+
+.post a:after {
+    content: '\A';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+.posts-insta figure img {
+    width: 100%;
+}
+
+.posts-insta p {
+    color: #fff;
+    font-size: 1.4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.4em;
+    margin-top: -.5em;
+    opacity: 0;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+.posts-insta span,
+p,
+i {
+    background-color: transparent;
+}
+
+.post:hover a:after {
+    opacity: 1;
+}
+
+.post:hover p {
+    opacity: 1;
+}
+
+footer {
+    margin-top: 2em;
+    border-top: 1px solid #fff;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
